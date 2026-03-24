@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* RESET BASE */
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+/* menu  */
+.menu {
+    background: #111;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.menu a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* SEZIONE PRINCIPALE */
+.sezione {
+    background: #fff;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* TITOLO */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* GALLERIA IMMAGINI */
+.galleria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}   
+
+.galleria img { 
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* sfondo principale */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cerchio luminoso 1 */
+body::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 15%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.35), transparent 70%);
+    border-radius: 50%;
+    animation: float1 12s infinite ease-in-out;
+}
+
+/* Cerchio luminoso 2 */
+body::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    right: 20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25), transparent 70%);
+    border-radius: 50%;
+    animation: float2 10s infinite ease-in-out;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* CSS */
+.easter-egg {
+    width: 30px;
+    /* dimensione piccola */
+    height: auto;
+    /* mantiene le proporzioni */
+    opacity: 0.6;
+    /* leggermente trasparente, opzionale */
+    position: fixed;
+    /* puoi metterla ovunque nello schermo */
+    bottom: 10px;
+    /* distanza dal bordo inferiore */
+    right: 10px;
+    /* distanza dal bordo destro */
+    cursor: pointer;
+    /* cambia il cursore quando ci passi sopra */
+    z-index: 9999;
+    /* sopra altri elementi */
+    transition: transform 0.2s;
+    /* piccolo effetto hover */
+}
+
+.easter-egg:hover {
+    transform: scale(1.5);
+    /* ingrandisce al passaggio del mouse */
+}
+
+/* CSS: aggiungi nel tuo file o in <style> */
+.easter-eggs {
+    position: fixed;
+    /* rimane sempre visibile durante lo scroll */
+    bottom: 10px;
+    /* distanza dal bordo inferiore */
+    right: 10px;
+    /* distanza dal bordo destro */
+    width: 60px;
+    /* dimensione della GIF */
+    height: auto;
+    /* mantiene le proporzioni */
+    z-index: 1000;
+    /* sopra altri elementi */
+    cursor: pointer;
+    /* cambia il cursore quando ci passi sopra */
+    opacity: 0.8;
+    /* leggermente trasparente per non disturbare */
+    transition: transform 0.3s, opacity 0.3s;
+    /* animazione hover */
+}
+
+.easter-eg:hover {
+    transform: scale(1.2);
+    /* ingrandisce leggermente al passaggio del mouse */
+    opacity: 1;
+    /* diventa completamente visibile */
+}
+
+.barra-led {
+    width: 300px;
+    height: 12px;
+    margin: 40px auto 20px auto;
+    border-radius: 20px;
+    animation: cambiaColore 18s infinite;
+}
+
+@keyframes cambiaColore {
+    0% {
+        background-color: purple;
+    }
+
+    12.5% {
+        background-color: orange;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    37.5% {
+        background-color: #f5f5dc;
+    }
+
+    /* beige */
+    50% {
+        background-color: #c4a484;
+    }
+
+    /* marrone chiaro */
+    62.5% {
+        background-color: purple;
+    }
+
+    75% {
+        background-color: white;
+    }
+
+    87.5% {
+        background-color: gray;
+    }
+
+    100% {
+        background-color: darkblue;
+    }
+}
+
+/* CSS */
+ .easter-eminem {
+    width: 30px;
+    /* dimensione piccola */
+    height: auto;
+    /* mantiene le proporzioni */
+    opacity: 0.6;
+    /* leggermente trasparente, opzionale */
+    position: fixed;
+    /* puoi metterla ovunque nello schermo */
+    bottom: 10px;
+    /* distanza dal bordo inferiore */
+    right: 10px;
+    /* distanza dal bordo destro */
+    cursor: pointer;
+    /* cambia il cursore quando ci passi sopra */
+    z-index: 9999;
+    /* sopra altri elementi */
+    transition: transform 0.2s;
+    /* piccolo effetto hover */
+}
+
+.easter-eggm:hover {
+    transform: scale(1.5);
+    /* ingrandisce al passaggio del mouse */
+}
+
+/* CSS: aggiungi nel tuo file o in <style> */
+.easter-eggmm {
+    position: fixed;
+    /* rimane sempre visibile durante lo scroll */
+    bottom: 10px;
+    /* distanza dal bordo inferiore */
+    right: 10px;
+    /* distanza dal bordo destro */
+    width: 60px;
+    /* dimensione della GIF */
+    height: auto;
+    /* mantiene le proporzioni */
+    z-index: 1000;
+    /* sopra altri elementi */
+    cursor: pointer;
+    /* cambia il cursore quando ci passi sopra */
+    opacity: 0.8;
+    /* leggermente trasparente per non disturbare */
+    transition: transform 0.3s, opacity 0.3s;
+    /* animazione hover */
+}
+
+.easter-egovers:hover {
+    transform: scale(1.2);
+    /* ingrandisce leggermente al passaggio del mouse */
+    opacity: 1;
+    /* diventa completamente visibile */
+}
+

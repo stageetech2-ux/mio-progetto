@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="wow.css">
+
+ <style>
+
+.log-in {
+width: 100%;
+padding: 10px;
+border: solid, 1px, orange;
+display: flex;
+align-items: center;
+}
+  /* Sfondo sfumato per tutta la pagina */
+  .contenitore {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Header elegante */
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+  }
+
+  /* Pulsanti moderni con hover */
+  .btn {
+    background: rgba(255, 255, 255, 0.2); 
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    background: #fff;
+    color: #66a6ff;
+    transform: scale(1.1);
+  }
+
+  /* Piccoli effetti decorativi */
+  .decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    animation: float 8s infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg);}
+    50% { transform: translateY(-30px) rotate(180deg);}
+    100% { transform: translateY(0) rotate(360deg);}
+  }
+
+  /* Posizioni delle sfere */
+  .circle1 { width: 100px; height: 100px; top: 10%; left: 15%; }
+  .circle2 { width: 150px; height: 150px; bottom: 20%; right: 10%; }
+  .circle3 { width: 80px; height: 80px; top: 50%; left: 70%; }
+
+</style>
+</head>
+<body>
+
+<div class="menu">
+
+<a href="#">HOME</a>
+<a href="html/categoria barre led.html">CATEGORIA BARRE</a>
+<a href="html/categoria strisce led.html">CATEGORIA STRISCE</a>
+<a href="html/telecomandi.html">TELECOMANDI</a>
+<a href="log-in.html">LOG-IN</a>
+<a href="html/led video.html">LED VIDEO</a>
+<a href="html/immagini luoghi nella casa dove mettere i led.html">LUOGHI DOVE METTERE I LED</a>
+<a href="html/alimentatori.html">ALIMENTATORI</a>
+<a href="html/video tutorial.html">VIDEO TUTORIAL</a>
+
+</div>
+
+<div class="contenitore">
+<div class="barra-led"></div>
+<a href="log-in.html"> <img src="image/jpg/logo.png" height="101px" alt="foto"> </a> <br> <br> <br>
+
+<!-- Aggiungi questo dentro il <body> -->
+<h1>BENVENUTI NEL MIO SITO!</h1>
+
+<a href="html/video tutorial.html"> <button class="btn">Scopri di più</button>
+<a href="log-in.html"> <button class="btn">Registrati</button>
+
+<a href="https://store.ledpro.it/">sito web della mia azienda ETECH SRL VIA CARNAZZI 7</a>
+
+<!-- Effetti decorativi -->
+<div class="decorative-circle circle1"></div>
+<div class="decorative-circle circle2"></div>
+<div class="decorative-circle circle3"></div>
+
+</div> 
+
+</body>    
+</html>
